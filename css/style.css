@@ -44,17 +44,32 @@ div{
 }
 
 
+/* Grading: 
+
+- The first media query uses min-width and triggers at 772 px.
+- In the first media query the div selector is set to a width of 45vw and uses display inline-block.
+- In the first media query the  img  selector is set to a max-height of 30vh 
+- The second media query uses min-width and triggers at 998 px.
+- In the second media query  the div selector is set to a width of 30vw.
+
+**Be sure connected to Github properly and text lintk
+
+*/
+
+
 /* Tablet view */
-@media screen and (min-width: 722px )
+@media screen and (min-width: 772px )
 {
     /* body {background-color: red;} */
     div
     {
         width: 45vw;
-        max-height: 30hv;        
+        max-height: 30hv;
+        display: inline-block;        
     }
     div img
     {
+        /* images sitck out div with out this... */
         width: 100%;
     }
 
